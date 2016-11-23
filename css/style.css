@@ -1,0 +1,172 @@
+/*File: GUI 1 Assignment 8
+Name: Yusuf Yildiz
+Class: GUI Programming 1
+Email: yusuf_yildiz@student.uml.edu
+Form Validation and Dynamic Tabs*/
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+.container {
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
+  border: 2px solid #2ecc71;
+}
+
+#inputs {
+  background: linear-gradient(rgba(46, 204, 113, 0.4), rgba(46, 204, 113, 0.95)), url("https://static.pexels.com/photos/21014/pexels-photo-medium.jpg");
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+#inputs p {
+  color: white;
+  text-align: left;
+  margin-left: 7px;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+#inputs .head {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#inputs .top {
+  display: inline-block;
+  width: 22%;
+  margin: 0 5px;
+}
+
+#inputs .sliders {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#inputs .slider {
+  width: 20%;
+  font-size: 15px;
+}
+
+#inputs #second {
+  margin-left: -2%;
+}
+
+#inputs .inputs {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#inputs input {
+  margin: 10px 5px;
+  width: 22%;
+  font-size: 15px;
+}
+
+#inputs button {
+  display: block;
+  margin: 0px auto;
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+#inputs button:hover {
+  cursor: pointer;
+  background: #eee;
+}
+
+#tabs, ul {
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(rgba(46, 204, 113, 0.4), rgba(46, 204, 113, 0.95)) !important;
+}
+
+.deleteBtn {
+  display: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+li:hover .deleteBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 25px;
+  width: 1.5em;
+  background: #007fff;
+  top: -26px;
+  right: -1px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #003eff;
+  border-bottom: none;
+}
+
+table {
+  width: 100%;
+  color: white;
+}
+
+table th {
+  border: 1px solid white;
+  background: #29b765;
+}
+
+table td:first-child {
+  background: #29b765;
+  color: white;
+}
+
+table td {
+  border: 1px solid white;
+  text-align: center;
+  background: white;
+  color: black;
+  max-width: 10px;
+}
+
+.deleteMultiple {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.deleteMultiple .btn {
+  display: flex;
+  width: 90%;
+  margin-left: 20px;
+}
+
+#deleteTables {
+  font-size: 1.1em;
+}
+
+.checkboxes {
+  width: 90%;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.checkboxes .checkbox {
+  border: 1px solid #2ecc71;
+  background: #25a25a;
+  margin: 0 10px;
+  padding: 3px 10px;
+}
+
+.checkboxes label {
+  margin-left: 10px;
+  color: white;
+}

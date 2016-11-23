@@ -1,0 +1,36 @@
+html
+    head
+        link(href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css")
+        link(rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")
+        link(href="css/style.css" rel="stylesheet" type="text/css")
+    body
+
+        .container
+            form(id="inputs" name='inputs' method='post' action='')
+                p.head My Multiplication Table
+                p.start-row.top Row Start
+                p.end-row.top Row End
+                p.start-col.top Column Start
+                p.end-col.top Column End
+                .inputs
+                    input(type="text" name="firstInput" value=-12)#firstInput
+                    input(type="text" name="secondInput" value=12)#secondInput
+                    input(type="text" name="thirdInput" value=-12)#thirdInput
+                    input(type="text" name="fourthInput" value=12)#fourthInput
+                .sliders
+                    #first.slider
+                    #second.slider
+                    #third.slider
+                    #fourth.slider
+                button(type="submit" value="submit" class="btn") Save Table
+            form.deleteMultiple
+                .checkboxes
+                .btn
+                    button(id="deleteTables") Delete Tables
+            #tabs
+                ul
+                
+        script(src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous")
+        script(src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js")
+        script(src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js")
+        script(src="js/script.js")

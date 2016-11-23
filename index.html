@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+        File: GUI 1 Assignment 8
+        Name: Yusuf Yildiz
+        Class: GUI Programming 1
+        Email: yusuf_yildiz@student.uml.edu
+        Form Validation and Dynamic Tabs
+    -->
+    <meta charset="UTF-8">
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+
+  <body>
+
+    <div class="container">
+        
+      <form id="inputs" name="inputs" method="post" action="">
+
+        <p class="head">My Multiplication Table</p>
+        <p class="start-row top">Row Start</p>
+        <p class="end-row top">Row End</p>
+        <p class="start-col top">Column Start</p>
+        <p class="end-col top">Column End</p>
+
+        <div class="inputs">
+
+          <input type="text" name="firstInput" value="-12" id="firstInput"/>
+          <input type="text" name="secondInput" value="12" id="secondInput"/>
+          <input type="text" name="thirdInput" value="-12" id="thirdInput"/>
+          <input type="text" name="fourthInput" value="12" id="fourthInput"/>
+
+        </div>
+
+        <div class="sliders">
+          <div id="first" class="slider"></div>
+          <div id="second" class="slider"></div>
+          <div id="third" class="slider"></div>
+          <div id="fourth" class="slider"></div>
+        </div>
+
+        <button type="submit" value="submit" class="btn">Save Table</button>
+
+      </form>
+
+      <form class="deleteMultiple">
+
+        <div class="checkboxes"></div>
+
+        <div class="btn">
+          <button id="deleteTables">Delete Tables</button>
+        </div>
+      </form>
+
+      <div id="tabs">
+        <ul></ul>
+      </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
